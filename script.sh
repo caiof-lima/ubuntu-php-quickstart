@@ -73,7 +73,7 @@ unset pchoice
 if [ ! -z "$php_ver" ]
 then
     echo -e "Installing PHP ${php_ver} with extensions\n"
-    sudo apt install "php${php_ver}-cli" "php${php_ver}-curl" "php${php_ver}-mysqlnd" "php${php_ver}-gd" "php${php_ver}-opcache" "php${php_ver}-zip" "php${php_ver}-intl" "php${php_ver}-common" "php${php_ver}-bcmath" "php${php_ver}-imap" "php${php_ver}-imagick" "php${php_ver}-xmlrpc" "php${php_ver}-readline" "php${php_ver}-memcached" "php${php_ver}-redis" "php${php_ver}-mbstring" "php${php_ver}-apcu" "php${php_ver}-xml" "php${php_ver}-dom" "php${php_ver}-redis" "php${php_ver}-memcached" "php${php_ver}-memcache" -y
+    sudo apt install "php${php_ver}-cli" "php${php_ver}-curl" "php${php_ver}-mysqlnd" "php${php_ver}-gd" "php${php_ver}-opcache" "php${php_ver}-zip" "php${php_ver}-intl" "php${php_ver}-common" "php${php_ver}-bcmath" "php${php_ver}-imap" "php${php_ver}-imagick" "php${php_ver}-xmlrpc" "php${php_ver}-readline" "php${php_ver}-memcached" "php${php_ver}-redis" "php${php_ver}-mbstring" "php${php_ver}-apcu" "php${php_ver}-xml" "php${php_ver}-dom" "php${php_ver}-redis" "php${php_ver}-memcached" "php${php_ver}-memcache""php${php_ver}-sqlite3" -y
     echo -en "\n Would you like to install xdebug also? [Y/n]: "
     read -n1 inst_xdebug
     echo -e "\n"
